@@ -8,10 +8,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="login-form">
-      <input type="text" placeholder="What is your name?" />
+    <form class="hidden" id="login-form" action="">
+      <input
+        type="text"
+        placeholder="What is your name?"
+        required
+        maxlength="15"
+      />
       <button>Log In</button>
-      <script src="app.js"></script>
-    </div>
+    </form>
+    <form class="hidden" id="logout-form">
+      <button>Logout</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <a href="https://google.com">asdasad</a>
+    <script src="app.js"></script>
   </body>
 </html>
