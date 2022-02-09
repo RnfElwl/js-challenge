@@ -19,6 +19,7 @@ const offLogoutClick = (event) => {
   loginForm.classList.remove(HIDDEN_CLASSNAME);
   logout.classList.add(HIDDEN_CLASSNAME);
   greeting.innerText = ``;
+  loginInput.value = "";
 };
 
 loginForm.addEventListener("submit", onLoginSubmit);

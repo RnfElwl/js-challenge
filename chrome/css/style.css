@@ -1,0 +1,40 @@
+body {
+  background-color: beige;
+}
+.hidden {
+  display: none;
+}
+#watch {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-image: url("../img/watch.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hour {
+  background-color: black;
+  width: 5px;
+  height: 130px;
+  bottom: 250px;
+  position: absolute;
+  transform-origin: bottom;
+}
+#minute {
+  background-color: black;
+  width: 4px;
+  height: 210px;
+  bottom: 250px;
+  position: absolute;
+  transform-origin: bottom;
+}
+#second {
+  background-color: tomato;
+  width: 3px;
+  height: 200px;
+  bottom: 250px;
+  position: absolute;
+  transform-origin: bottom;
+}
