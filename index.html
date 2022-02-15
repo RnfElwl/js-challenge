@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1babf2552f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="column first">
+      <div>
+        <form class="hidden" id="login-form" action="">
+          <input
+            type="text"
+            placeholder="What is your name?"
+            required
+            maxlength="15"
+          />
+          <button>Log In</button>
+        </form>
+        <form class="hidden" id="logout-form">
+          <button>Logout</button>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form">
+          <input
+            placeholder="Write a To Do and Press End"
+            type="text"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="column second">
+      <h2 id="clock"></h2>
+      <div id="watch">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+      </div>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="column isedol three">
+      <div></div>
+      <img src="" alt="" />
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>

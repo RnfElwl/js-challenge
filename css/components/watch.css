@@ -1,0 +1,35 @@
+#watch {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-image: url("../img/watch.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hour {
+  background-color: black;
+  width: 5px;
+  height: 100px;
+  bottom: 200px;
+  position: absolute;
+  transform-origin: bottom;
+}
+#minute {
+  background-color: black;
+  width: 4px;
+  height: 160px;
+  bottom: 200px;
+  position: absolute;
+  transform-origin: bottom;
+}
+#second {
+  background-color: tomato;
+  width: 3px;
+  height: 130px;
+  bottom: 200px;
+  position: absolute;
+  transform-origin: bottom;
+}
