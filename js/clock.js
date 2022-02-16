@@ -3,7 +3,7 @@ const hourBar = document.querySelector("#hour");
 const minuteBar = document.querySelector("#minute");
 const secondBar = document.querySelector("#second");
 
-const sayHello = () => {
+const watch = () => {
   const date = new Date();
   const hours = date.getHours();
   const minutes = date.getMinutes();
@@ -21,5 +21,5 @@ const sayHello = () => {
   minuteBar.style.transform = `rotate(${minutes * 6 + (seconds * 6) / 60}deg)`;
   secondBar.style.transform = `rotate(${seconds * 6}deg)`;
 };
-
-setInterval(sayHello, 1000);
+watch();
+setInterval(watch, 1000);

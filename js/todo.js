@@ -14,7 +14,6 @@ const colors = [
 ];
 const TODOS_KEY = "todos";
 let toDos = [];
-
 function saveToDos() {
   localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
@@ -45,6 +44,12 @@ const paintTodo = (newTodo) => {
 
 function hanleToDoSubmit(event) {
   event.preventDefault();
+  const count = toDos.length;
+  if (count > 7) {
+    alert("many messege write");
+    toDoInput.value = "";
+    return;
+  }
   const newTodo = toDoInput.value;
 
   toDoInput.value = "";

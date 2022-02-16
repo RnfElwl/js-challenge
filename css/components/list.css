@@ -16,3 +16,19 @@
   align-items: center;
   border-radius: 10px;
 }
+
+.log button {
+  border: 0px;
+  background-color: transparent;
+}
+input {
+  border: 0px;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(116, 116, 116, 0.5);
+  forced-color-adjust: ;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(134, 132, 255);
+}
