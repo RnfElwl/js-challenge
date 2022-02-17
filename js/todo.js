@@ -45,7 +45,7 @@ const paintTodo = (newTodo) => {
 function hanleToDoSubmit(event) {
   event.preventDefault();
   const count = toDos.length;
-  if (count > 7) {
+  if (count > 9) {
     alert("many messege write");
     toDoInput.value = "";
     return;

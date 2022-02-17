@@ -1,17 +1,18 @@
 const images = ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
-const logBtn = document.querySelector(".log button");
+const logBtn = document.querySelectorAll(".log button");
+const inputBorder = document.querySelectorAll(".first input");
 const bgColors = [
   "#DB7093",
   "#c7e366",
   "#87CEFA",
-  "#FFD700",
+  "#EFBF44",
   "#7B68EE",
   "#BA55D3",
 ];
 
 const btnColor = [
-  "#D17093",
-  "#c1e366",
+  "#DB7093",
+  "#c7e366",
   "#87CEFA",
   "#FFD700",
   "#7B68EE",
@@ -21,9 +22,23 @@ const btnColor = [
 const chosenImage = Math.floor(Math.random() * images.length);
 
 const bgImage = document.querySelector(".isedol img");
-console.log(bgImage);
 const bgColor = document.querySelector("body");
 bgImage.src = `./css/img/${images[chosenImage]}`;
 bgColor.style.backgroundColor = `${bgColors[chosenImage]}`;
+console.log(logBtn);
+for (let i = 0; i < logBtn.length; i++) {
+  logBtn[i].style.backgroundColor = `${btnColor[chosenImage]}`;
+}
+console.log(inputBorder);
+inputBorder[0].addEventListener("focus", handleFocus);
+inputBorder[0].addEventListener("blur", handleBlur);
+inputBorder[1].addEventListener("focus", handleFocus);
+inputBorder[1].addEventListener("blur", handleBlur);
+function handleFocus(event) {
+  event.path[0].style.borderBottom = `2px solid ${bgColors[chosenImage]}`;
+}
+function handleBlur() {
+  event.path[0].style.borderBottom = `2px solid rgba(116, 116, 116, 0.5)`;
+}
 
-logBtn.style.backgroundColor = `${btnColor[chosenImage]}`;
+/*inputBorder[i].style.borderBottom = ` 2px solid ${bgColors[chosenImage]}`;*/

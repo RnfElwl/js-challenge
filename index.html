@@ -23,13 +23,15 @@
           <button>Log In</button>
         </form>
         <form class="hidden log" id="logout-form">
+          <h1 id="greeting" class="hidden"></h1>
           <button>Logout</button>
         </form>
-        <h1 id="greeting" class="hidden"></h1>
+
         <form id="todo-form">
           <input
             placeholder="Write a To Do and Press End"
             type="text"
+            maxlength="50"
             required
           />
         </form>
@@ -42,11 +44,17 @@
     </div>
 
     <div class="column second">
-      <h2 id="clock"></h2>
-      <div id="watch">
-        <div id="hour"></div>
-        <div id="minute"></div>
-        <div id="second"></div>
+      <div class="todays">
+        <h2></h2>
+        <div></div>
+      </div>
+      <div class="times">
+        <div id="watch">
+          <div id="hour"></div>
+          <div id="minute"></div>
+          <div id="second"></div>
+        </div>
+        <h2 id="clock"></h2>
       </div>
 
       <div id="quote">
