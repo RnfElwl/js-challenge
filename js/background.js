@@ -25,15 +25,12 @@ const bgImage = document.querySelector(".isedol img");
 const bgColor = document.querySelector("body");
 bgImage.src = `./css/img/${images[chosenImage]}`;
 bgColor.style.backgroundColor = `${bgColors[chosenImage]}`;
-console.log(logBtn);
 for (let i = 0; i < logBtn.length; i++) {
   logBtn[i].style.backgroundColor = `${btnColor[chosenImage]}`;
+  inputBorder[i].addEventListener("focus", handleFocus);
+  inputBorder[i].addEventListener("blur", handleBlur);
 }
-console.log(inputBorder);
-inputBorder[0].addEventListener("focus", handleFocus);
-inputBorder[0].addEventListener("blur", handleBlur);
-inputBorder[1].addEventListener("focus", handleFocus);
-inputBorder[1].addEventListener("blur", handleBlur);
+
 function handleFocus(event) {
   event.path[0].style.borderBottom = `2px solid ${bgColors[chosenImage]}`;
 }

@@ -44,11 +44,19 @@
     </div>
 
     <div class="column second">
-      <div class="todays">
-        <h2></h2>
+      <div class="count-down">
+        <form action="">
+          <h2>Count Down Timer</h2>
+          <input id="hours" type="number" max="24" min="0" />:
+          <input id="minutes" type="number" max="60" min="0" />:
+          <input id="second" type="number" max="60" min="0" />
+          <button>Timer</button>
+        </form>
         <div></div>
       </div>
+
       <div class="times">
+        <h2>Current time</h2>
         <div id="watch">
           <div id="hour"></div>
           <div id="minute"></div>
@@ -64,7 +72,9 @@
     </div>
     <div class="column isedol three">
       <div></div>
-      <img src="" alt="" />
+      <a href="https://www.youtube.com/c/welshcorgimessi">
+        <img src="" alt="" />
+      </a>
     </div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
@@ -72,5 +82,6 @@
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/calendar.js"></script>
   </body>
 </html>
