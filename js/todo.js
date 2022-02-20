@@ -46,7 +46,9 @@ function hanleToDoSubmit(event) {
   event.preventDefault();
   const count = toDos.length;
   if (count > 9) {
-    alert("many messege write");
+    alert(
+      "There are so many messages. Please erase the text and enter it again."
+    );
     toDoInput.value = "";
     return;
   }
