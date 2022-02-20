@@ -1,6 +1,6 @@
 const images = ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
-const logBtn = document.querySelectorAll(".log button");
-const inputBorder = document.querySelectorAll(".first input");
+const logBtn = document.querySelectorAll(".btn");
+const inputBorder = document.querySelectorAll(".inputBorder input");
 const bgColors = [
   "#DB7093",
   "#c7e366",
@@ -27,6 +27,8 @@ bgImage.src = `./css/img/${images[chosenImage]}`;
 bgColor.style.backgroundColor = `${bgColors[chosenImage]}`;
 for (let i = 0; i < logBtn.length; i++) {
   logBtn[i].style.backgroundColor = `${btnColor[chosenImage]}`;
+}
+for (let i = 0; i < inputBorder.length; i++) {
   inputBorder[i].addEventListener("focus", handleFocus);
   inputBorder[i].addEventListener("blur", handleBlur);
 }

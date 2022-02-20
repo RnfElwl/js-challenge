@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://kit.fontawesome.com/1babf2552f.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="shortcut icon" href="#" />
   </head>
   <body>
-    <div class="column first">
+    <div class="column first inputBorder">
       <div>
         <form class="hidden log" id="login-form" action="">
           <input
@@ -20,11 +17,11 @@
             required
             maxlength="15"
           />
-          <button>Log In</button>
+          <button class="btn">Log In</button>
         </form>
         <form class="hidden log" id="logout-form">
           <h1 id="greeting" class="hidden"></h1>
-          <button>Logout</button>
+          <button class="btn">Logout</button>
         </form>
 
         <form id="todo-form">
@@ -43,16 +40,44 @@
       </div>
     </div>
 
-    <div class="column second">
-      <div class="count-down">
-        <form action="">
-          <h2>Count Down Timer</h2>
-          <input id="hours" type="number" max="24" min="0" />:
-          <input id="minutes" type="number" max="60" min="0" />:
-          <input id="second" type="number" max="60" min="0" />
-          <button>Timer</button>
-        </form>
-        <div></div>
+    <div class="column second inputBorder">
+      <div class="timer">
+        <h1 class="timer-title">Count Down Timer</h1>
+        <div class="timer-inputs">
+          <form class="count-down log" action="">
+            <div class="inputBorder">
+              <input
+                id="hours"
+                value="0"
+                type="number"
+                max="23"
+                min="0"
+                required
+              />:
+              <input
+                id="minutes"
+                value="0"
+                type="number"
+                max="60"
+                min="0"
+                required
+              />:
+              <input
+                id="seconds"
+                value="0"
+                type="number"
+                max="60"
+                min="0"
+                required
+              />
+            </div>
+            <button class="count-down__btn btn">Start</button>
+          </form>
+          <form class="reset-form">
+            <button class="count-down__reset btn hidden">Reset</button>
+          </form>
+        </div>
+        <h2 class="timer-text">00:00:00</h2>
       </div>
 
       <div class="times">
@@ -82,6 +107,6 @@
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/background.js"></script>
-    <script src="js/calendar.js"></script>
+    <script src="js/timer.js"></script>
   </body>
 </html>
